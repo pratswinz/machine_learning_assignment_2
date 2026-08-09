@@ -20,7 +20,7 @@ Predict whether a breast tumor is **Malignant (0)** or **Benign (1)** using feat
 | Features | 30 |
 | Target | 0 = Malignant, 1 = Benign |
 
-Train-test split: 75% train, 25% test. Test data is saved as `test_data.csv`.
+Train-test split: 75% train (426), 25% test (143), stratified with `random_state=42`. Test data is saved as `test_data.csv`.
 
 ---
 

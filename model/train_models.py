@@ -66,7 +66,7 @@ def main():
     df, feature_names = load_dataset()
     print(f"Total samples: {len(df)}, Features: {len(feature_names)}")
 
-    # Split into train and test - test set will be saved as test_data.csv
+    # Split 75% train / 25% test (stratified)
     train_df, test_df = train_test_split(
         df, test_size=0.25, random_state=RANDOM_STATE, stratify=df[TARGET_COLUMN]
     )
